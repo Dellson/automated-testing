@@ -53,22 +53,24 @@ namespace SeleniumCsharp
 
         private void FillName()
         {
-            contactPage.GetName().SendKeys("Zbigniew Miażdżyręka");
+            contactPage.GetName().SendKeys("Zbigniew Testowy");
         }
 
         private void FillEmail()
         {
-            contactPage.GetEmail().SendKeys("zbigniew.miazdzyreka@gmail.com");
+            contactPage.GetEmail().SendKeys("zbigniew.testowy@gmail.com");
         }
 
         private void FillTopic()
         {
-            contactPage.GetTopic().SendKeys("Sprzedam Kota");
+            contactPage.GetTopic().SendKeys("Test automatyczny");
         }
 
         private void FillText()
         {
-            contactPage.GetText().SendKeys("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id venenatis metus. Integer pharetra sed arcu in varius. Nulla faucibus ante nulla, nec elementum odio porttitor fermentum. Nulla convallis dapibus fermentum.");
+            contactPage.GetText().SendKeys("Lorem ipsum dolor sit amet, consectetur adipiscing elit. " +
+                "Curabitur id venenatis metus. Integer pharetra sed arcu in varius. Nulla faucibus ante nulla, " +
+                "nec elementum odio porttitor fermentum. Nulla convallis dapibus fermentum.");
         }
 
         private void ClickSubmitButton()
